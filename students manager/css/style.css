@@ -75,5 +75,32 @@ body {
 .header .search__input {
   background: #ffffff;
   border: none;
-  color: #9fa8b7;
-  font-size: 1.9rem; }
+  font-size: 1.6rem; }
+  .header .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #9fa8b7; }
+
+.user-nav__user {
+  display: flex;
+  align-items: center; }
+
+.user-nav__user-name {
+  color: #9ea6b9;
+  margin-right: 2rem;
+  font-weight: 700;
+  font-size: 1.4rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 200px; }
+
+.user-nav__dropdown-button {
+  border: none;
+  background-color: #ffffff; }
+
+.user-nav__dropdown-icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 200px;
+  fill: #1a4884; }

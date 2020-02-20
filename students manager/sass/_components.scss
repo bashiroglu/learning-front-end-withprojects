@@ -44,7 +44,38 @@
   .search__input {
     background: #ffffff;
     border: none;
-    color: #9fa8b7;
-    font-size: 1.9rem;
+
+    font-size: 1.6rem;
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #9fa8b7;
+    }
+  } //9ea6b9
+}
+.user-nav {
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+  &__user-name {
+    color: #9ea6b9;
+    margin-right: 2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  &__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 200px;
+  }
+  &__dropdown-button {
+    border: none;
+    background-color: #ffffff;
+  }
+  &__dropdown-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 200px;
+    fill: #1a4884;
   }
 }
