@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #f5f6f8;
+  --color-primary-light: #f5f6f8;
+  --color-primary-dark: #ba265d;
+
+  --color-text-dark: #0b283a;
+
+  --color-light: #f5f6f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  min-height: 100vh;
+}

@@ -1,0 +1,50 @@
+.sidebar {
+  &__section-name {
+    text-transform: uppercase;
+    padding: 0.8rem 5rem;
+    font-size: 1.4rem;
+    color: #1d418b;
+    font-weight: 700;
+  }
+}
+
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 2.5rem;
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    padding: 1rem 5rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  &__link:hover {
+    color: #1aeaac;
+  }
+  &__link:hover &__icon {
+    fill: #1aeaac;
+  }
+
+  &__icon {
+    fill: #d4d7dc;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+  }
+}
+.header {
+  .search__input {
+    background: #ffffff;
+    border: none;
+    color: #9fa8b7;
+    font-size: 1.9rem;
+  }
+}
