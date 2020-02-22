@@ -1,9 +1,10 @@
 :root {
-  --color-primary: #f5f6f8;
+  --color-primary: #014c85;
   --color-primary-light: #f5f6f8;
   --color-primary-dark: #ba265d;
   --color-text-dark: #0b283a;
-  --color-light: #f5f6f8; }
+  --color-light: #f5f6f8;
+  --color-white: #fff; }
 
 * {
   margin: 0;
@@ -25,32 +26,34 @@ body {
   min-height: 100vh; }
 
 .main-container {
-  background: #d37777;
+  background: #f4f5f9;
   display: flex; }
   .main-container .sidebar {
-    background: var(--color-light);
-    padding: 10rem 2rem;
-    flex: 0 0 200px; }
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem 3rem 2rem 2rem;
+    flex: 0 0 200px;
+    min-height: 100vh; }
   .main-container .header {
-    background: #ffffff;
+    background: var(--color-white);
     height: 5vh;
     padding: 4rem 5rem;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    flex: 0 1 82%; }
+    flex: 0 1 82%;
+    box-shadow: 0 4px 2px -2px gray; }
 
-.sidebar__section-name {
-  text-transform: uppercase;
-  padding: 0.8rem 5rem;
-  font-size: 1.4rem;
-  color: #1d418b;
-  font-weight: 700; }
+.sidebar__logo {
+  height: 6.25rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem; }
 
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
-  margin-top: 2.5rem; }
+  margin-top: 1.5rem; }
+  .side-nav__item {
+    width: max-content; }
   .side-nav__link:link, .side-nav__link:visited {
     color: var(--color-text-dark);
     text-decoration: none;
@@ -63,9 +66,9 @@ body {
     display: flex;
     align-items: center; }
   .side-nav__link:hover {
-    color: #1aeaac; }
+    color: var(--color-primary); }
   .side-nav__link:hover .side-nav__icon {
-    fill: #1aeaac; }
+    fill: var(--color-primary); }
   .side-nav__icon {
     fill: #d4d7dc;
     width: 1.75rem;
@@ -103,4 +106,5 @@ body {
   height: 1.75rem;
   width: 1.75rem;
   border-radius: 200px;
-  fill: #1a4884; }
+  fill: #1a4884;
+  margin-left: 0.5rem; }
