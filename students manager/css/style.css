@@ -1,9 +1,12 @@
 :root {
   --color-primary: #014c85;
+  --color-secondary: #7137eb;
   --color-primary-light: #f5f6f8;
   --color-primary-dark: #ba265d;
-  --color-text-dark: #0b283a;
+  --color-text-dark: #004b84;
+  --color-grey-dark: #a2a4b9;
   --color-light: #f5f6f8;
+  --color-text-light: #a8a8b0;
   --color-white: #fff; }
 
 * {
@@ -81,30 +84,56 @@ body {
   font-size: 1.6rem; }
   .header .search__input::-webkit-input-placeholder {
     font-weight: 100;
-    color: #9fa8b7; }
+    color: var(--color-text-light); }
 
-.user-nav__user {
+.user-nav {
+  align-self: stretch;
   display: flex;
   align-items: center; }
-
-.user-nav__user-name {
-  color: #9ea6b9;
-  margin-right: 2rem;
-  font-weight: 700;
-  font-size: 1.4rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  width: 3.75rem;
-  border-radius: 200px; }
-
-.user-nav__dropdown-button {
-  border: none;
-  background-color: #ffffff; }
-
-.user-nav__dropdown-icon {
-  height: 1.75rem;
-  width: 1.75rem;
-  border-radius: 200px;
-  fill: #1a4884;
-  margin-left: 0.5rem; }
+  .user-nav > * {
+    padding: 0 1.5rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .user-nav__icon-box {
+    position: relative; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-grey-dark); }
+  .user-nav__user {
+    display: flex;
+    align-items: center; }
+  .user-nav__user-name {
+    color: #797888;
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 200px;
+    margin-right: 1.9rem; }
+  .user-nav__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-text-dark);
+    color: #fff;
+    position: absolute;
+    top: -1.7rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .user-nav__dropdown-button {
+    border: none;
+    text-align: center;
+    background-color: #ffffff; }
+  .user-nav__dropdown-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 200px;
+    fill: #cfcfd9; }
