@@ -59,11 +59,14 @@
   align-items: center;
 
   & > * {
-    padding: 0 1.5rem;
-    cursor: pointer;
+    // padding: 0 1.5rem;
+    // cursor: pointer;
     height: 100%;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+  }
+  & > *:hover {
+    background-color: #797888;
   }
   &__icon-box {
     position: relative;
@@ -117,6 +120,5 @@
     width: 1.75rem;
     border-radius: 200px;
     fill: #cfcfd9;
-    
   }
 }
