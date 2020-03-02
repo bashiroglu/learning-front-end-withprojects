@@ -1,0 +1,7 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  grid-template-rows: 10vh min-content min-content 30vh 40vh;
+  grid-template-columns: repeat(4, min-content);
+}

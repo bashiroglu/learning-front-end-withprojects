@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  &__logo {
+    margin-right: auto;
+  }
+  &__link:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
