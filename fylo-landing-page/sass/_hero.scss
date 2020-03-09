@@ -1,0 +1,54 @@
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+
+  &__img {
+    width: 50vw;
+
+    img {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  &__text {
+    width: 50vw;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1.9rem;
+    }
+    form {
+      margin-top: 2.5rem;
+      > * {
+        color: $color-neutral-gray;
+        padding: 1.9rem 4rem;
+      }
+      input {
+        width: 55%;
+        font-size: 1.6rem;
+        border-radius: 5px;
+        color: $color-neutral-gray;
+        border: 1px solid #111010;
+      }
+      button {
+        width: 35%;
+        margin-left: 2rem;
+
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 700;
+        background-color: #376bfb;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: darken($color: #376bfb, $amount: 10);
+        }
+      }
+    }
+  }
+}

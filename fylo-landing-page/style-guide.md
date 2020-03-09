@@ -38,15 +38,13 @@ The designs were created to the following widths:
 
 
 
-  All your files in one secure location, accessible anywhere.
+  
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+
 
   Get Started
 
-  Stay productive, wherever you are
+  
 
   Never let location be an issue when accessing your files. Fylo has you 
   covered for all of your file storage needs.
@@ -56,8 +54,6 @@ The designs were created to the following widths:
 
   See how Fylo works
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
 
   Kyle Burton
   Founder & CEO, Huddle
