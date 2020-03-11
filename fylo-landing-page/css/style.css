@@ -31,6 +31,29 @@ body {
 .mt-medium {
   margin-top: 4rem; }
 
+.ml-xs {
+  margin-left: 1rem; }
+
+.footer__container {
+  padding-top: 6rem;
+  background-color: #070439; }
+
+.footer__item a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  line-height: 4rem; }
+  .footer__item a:hover {
+    color: #7968a1; }
+
+.footer__logo {
+  fill: #fff; }
+
+.footer__cols {
+  display: flex; }
+  .footer__cols .col_footer {
+    width: 35%; }
+
 .subscribe__container {
   background: #585989;
   color: #fff; }
