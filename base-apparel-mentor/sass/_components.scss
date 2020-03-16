@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.container__text{
+    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 3rem 12rem;
+}
+.container__photo{
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
