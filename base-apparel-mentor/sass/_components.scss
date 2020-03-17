@@ -1,17 +1,29 @@
-.container{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-}
 .container__text{
-    background: url(../images/bg-pattern-desktop.svg) no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 3rem 12rem;
-}
-.container__photo{
-    
-    img{
-        width: 100%;
-        height: auto;
+    color: var(--color-primary-red);
+    h1{
+        font-size: 5rem;
+        font-weight: 300;
+        letter-spacing: 0.95rem;
+        text-transform: uppercase;
+        line-height: 5.4rem;
+        margin-bottom: 2.3rem;
+        
+        span{
+            color: var(--color-primary-red-dark);
+            font-weight: 400;
+            font-size: 5rem;
+            display: inline-block;
+            width: 65%;
+        }
+        
+    }
+    p{
+        font-size: 1.4rem;
+    }
+    header{
+        img{
+            padding-bottom: 6rem;
+            width: 30%;
+        }
     }
 }
