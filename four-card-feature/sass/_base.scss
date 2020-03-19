@@ -1,0 +1,37 @@
+// Variables
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    --color-neutral-dark:hsl(234, 12%, 34%);
+    --color-neutral-grayish:hsl(229, 6%, 66%);
+    --color-neutral-light:hsl(0, 0%, 98%);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    
+    background: #FAFAFA;
+    
+  }
+  
