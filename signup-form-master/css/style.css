@@ -71,7 +71,7 @@ body {
         display: block;
         margin-bottom: 2.5rem;
         border-radius: 6px;
-        border: 1.5px solid rgba(255, 122, 122, 0.815);
+        border: 1.5px solid #b9b6d3;
         padding: 1.3rem 1.8rem; }
         .container__form-side form input::placeholder {
           color: #3e3c49;
