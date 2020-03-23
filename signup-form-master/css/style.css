@@ -27,71 +27,114 @@ body {
   font-size: 1.6rem; }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  height: 100vh;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  place-items: center;
   padding: 5rem 0; }
+  .container__header {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+    border: none;
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.842);
+    background: var(--color-blue);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    cursor: pointer; }
+    .container__header span {
+      font-weight: 700;
+      color: #fff; }
+  .container > div {
+    flex: 1; }
   .container__text {
-    padding: 0 4rem;
-    width: 50%;
+    padding: 0 3rem;
     align-self: center; }
     .container__text h1 {
       line-height: 5rem;
       font-size: 4rem;
       margin-bottom: 2rem; }
     .container__text p {
-      font-size: 1.5rem; }
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem; }
   .container__form-side {
-    padding: 0 4rem;
+    padding: 0 3rem;
     margin: 0 auto; }
-    .container__form-side button {
-      font-weight: 400;
-      width: 100%;
-      display: inline-block;
-      border: none;
-      padding: 1.5rem 9rem;
-      color: rgba(255, 255, 255, 0.842);
-      background: var(--color-blue);
-      border-radius: 6px;
-      margin-bottom: 2.5rem;
-      cursor: pointer; }
-      .container__form-side button span {
-        font-weight: 700;
-        color: #fff; }
-      .container__form-side button:hover {
-        background: #685dac; }
     .container__form-side form {
       background: #fff;
       padding: 3rem;
+      border-radius: 6px; }
+    .container__form-side button {
+      margin-bottom: 0rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      background: var(--color-green);
+      font-size: 1.1rem;
+      border: 1px solid var(--color-green);
+      box-shadow: 0 2px #21a169;
+      color: #fff;
+      padding: 1.5rem 0;
       border-radius: 6px;
-      width: 100%; }
-      .container__form-side form input {
-        width: 100%;
-        display: block;
-        margin-bottom: 2.5rem;
-        border-radius: 6px;
-        border: 1.5px solid #b9b6d3;
-        padding: 1.3rem 1.8rem; }
-        .container__form-side form input::placeholder {
-          color: #3e3c49;
-          font-weight: 600;
-          font-size: 1.2rem; }
-      .container__form-side form button {
-        margin-bottom: 0rem;
-        text-transform: uppercase;
+      width: 100%;
+      cursor: pointer;
+      display: block;
+      letter-spacing: 1px; }
+      .container__form-side button:hover {
+        background: #51d29a; }
+      .container__form-side button:focus {
+        outline: 0; }
+      .container__form-side button:active {
+        box-shadow: 0 0 var(--color-green);
+        transform: translateY(2px); }
+    .container__form-side p {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--color-grayish);
+      font-size: 0.9rem; }
+      .container__form-side p a {
         font-weight: 600;
-        background: var(--color-green);
-        font-size: 1.1rem;
-        cursor: pointer; }
-        .container__form-side form button:hover {
-          background: #51d29a; }
-      .container__form-side form p {
-        margin-top: 1rem;
-        text-align: center;
-        color: var(--color-grayish);
-        font-size: 1rem; }
-        .container__form-side form p a {
-          font-weight: 600;
-          text-decoration: none;
-          color: var(--color-red); }
+        text-decoration: none;
+        color: var(--color-red); }
+
+.form-group {
+  margin-bottom: 1.7rem; }
+  .form-group p {
+    font-size: 1rem;
+    text-align: right;
+    color: var(--color-red);
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    font-style: italic; }
+  .form-group input {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #b9b6d3;
+    padding: 1.3rem 1.8rem; }
+    .form-group input::placeholder {
+      color: #3e3c49;
+      font-weight: 600;
+      font-size: 1.2rem; }
+    .form-group input:focus {
+      border: 1.2px solid #3e3c49; }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png); }
+  html {
+    box-sizing: border-box;
+    font-size: 58.5%; }
+  .container {
+    flex-direction: column; }
+    .container h1 {
+      font-size: 3rem; }
+  p {
+    text-align: center; }
+  h1 {
+    text-align: center; } }
+
+.d-none {
+  display: none; }
