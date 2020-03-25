@@ -21,6 +21,7 @@ body {
   color: #fff;
   background-color: var(--color-gray);
   font-weight: 300;
+  padding: 3rem;
   line-height: 1.6;
   font-size: 1.6rem;
   display: flex;
@@ -28,13 +29,14 @@ body {
   min-height: 100vh; }
 
 .container {
-  max-width: 55rem;
+  max-width: 65rem;
   margin: auto;
-  padding: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  border: none;
   border-radius: 8px;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.47); }
   .container__top {
     padding: 3rem 3.5rem; }
     .container__top h1 {
@@ -74,8 +76,10 @@ body {
         background-color: var(--color-yellow);
         color: #fff;
         margin-top: 2.5rem;
+        box-shadow: -1px 7px 12px 0px rgba(0, 0, 0, 0.41);
         cursor: pointer; }
         .container__bottom .container__bottom-left button:hover {
+          box-shadow: -1px 4px 12px 0px rgba(0, 0, 0, 0.41);
           background-color: #b3d421; }
     .container__bottom .container__bottom-right {
       flex: 1;

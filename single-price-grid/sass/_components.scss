@@ -1,13 +1,14 @@
 .container {
-  max-width: 55rem;
+  max-width: 65rem;
   margin: auto;
   // height: 100vh;
-  padding: 2rem;
-  font-size: 1.2rem;;
-
+  // padding: 2rem;
+  font-size: 1.3rem;
+  border: none;
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
+  box-shadow: -1px 2px 12px 1px rgba(0,0,0,0.47);
   &__top{
     
     
@@ -66,8 +67,10 @@
         background-color: var(--color-yellow);
         color: #fff;
         margin-top: 2.5rem;
+        box-shadow: -1px 7px 12px 0px rgba(0,0,0,0.41);
         cursor: pointer;
         &:hover{
+          box-shadow: -1px 4px 12px 0px rgba(0,0,0,0.41);
           background-color: darken($color: hsl(71, 73%, 54%), $amount: 6);
         }
       }

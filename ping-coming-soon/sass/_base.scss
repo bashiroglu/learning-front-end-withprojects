@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap');
 
 // FONT VARIABLES
-$font-primary: 'Karla', sans-serif;
+$font-primary: 'Libre Franklin', sans-serif;
 
 // COLOR VARIABLES
 :root {
-  --color-cyan: hsl(179, 62%, 43%);
-  --color-yellow: hsl(71, 73%, 54%);
-  --color-gray: hsl(204, 43%, 93%);
-  --color-grayish-blue: hsl(218, 22%, 67%);
+ --color-primary-blue: hsl(223, 87%, 63%);
+ --color-secondary-blue: hsl(223, 100%, 88%);
+ --color-secondary-red: hsl(354, 100%, 66%);
+ --color-nuetral-gray: hsl(0, 0%, 59%);
+ --color-nuetral-dark-blue: hsl(209, 33%, 12%);
 }
 
 
@@ -29,7 +30,6 @@ html {
 body {
   font-family: $font-primary;
   color:#fff;
-  background-color: var(--color-gray);
   font-weight: 300;
   padding: 3rem;
   line-height: 1.6;
