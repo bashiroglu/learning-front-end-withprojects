@@ -29,12 +29,9 @@ html {
 
 body {
   font-family: $font-primary;
-  color:#fff;
   font-weight: 300;
-  padding: 3rem;
+  // padding: 3rem;
   line-height: 1.6;
   font-size: 1.6rem;
-  display: flex;
-  place-items: center;
   min-height: 100vh;
 }

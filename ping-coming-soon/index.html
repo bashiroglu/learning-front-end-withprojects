@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <h1><span>We are launching</span> soon!</h1>
+      <p>Subscribe and get notified</p>
+      <form action="./">
+        <input type="email" id="email" placeholder="Your Email address..." />
+        <button>
+          Notify Me
+        </button>
+      </form>
 
-  
-
-</body>
+      <img src="./images/illustration-dashboard.png" alt="illustration" />
+      <footer>
+        <div class="icons__box">
+          <div>
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <p class="footer__text">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
