@@ -7,6 +7,7 @@ List of challanges:
 2. Base Apparel coming soon page (finished without mobile, without mobile js )
 3. Intro component with sign-up form (add desktop(done), add mobile (done), add js(done))
 4. Single price grid component (add desktop(done), add mobile (done))
-5. Ping single column coming soon page (add desktop(done), add mobile (done))
-6. 
+5. Ping single column coming soon page (add desktop(done), add mobile (done), add JS and some styling issues (not done))
+6. Huddle landing page with alternating feature blocks (add desktop , add mobile  )
+7. 
 

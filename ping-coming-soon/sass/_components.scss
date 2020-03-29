@@ -36,6 +36,7 @@
       cursor: pointer;
       border: none;
       background: var(--color-primary-blue);
+      box-shadow: 0 5px 5px hsl(223, 100%, 88%);
       color: #fff;
       padding: 1rem 3.5rem;
       border-radius: 2rem;
@@ -44,6 +45,12 @@
       &:hover {
         opacity: 0.8;
       }
+    }
+    p {
+      color: var(--color-secondary-red);
+      text-align: left;
+      // font-size: 1rem;
+      padding-top: 1rem;
     }
   }
 }

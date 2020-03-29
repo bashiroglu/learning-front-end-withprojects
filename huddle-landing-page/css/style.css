@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
+:root {
+  --color-cyan: hsl(179, 62%, 43%);
+  --color-yellow: hsl(71, 73%, 54%);
+  --color-gray: hsl(204, 43%, 93%);
+  --color-grayish-blue: hsl(218, 22%, 67%); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-color: var(--color-gray);
+  font-weight: 300;
+  padding: 3rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  display: flex;
+  place-items: center;
+  min-height: 100vh; }
