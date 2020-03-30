@@ -11,19 +11,24 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    /> -->
 
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <nav>
           <img src="./images/logo.svg" alt="" />
           <button>Try It Free</button>
         </nav>
-        <div>
+        <div class="header__content">
           <div>
             <h1>Build The Community Your Fans Will Love</h1>
             <p>
@@ -41,7 +46,7 @@
     <main>
       <div class="container">
         <div class="card">
-          <div>
+          <div class="card__text-box">
             <h3>Grow Together</h3>
             <p>
               Generate meaningful discussions with your audience and build a
@@ -52,7 +57,8 @@
           <img src="./images/illustration-grow-together.svg" alt="" />
         </div>
         <div class="card">
-          <div>
+          <img src="./images/illustration-flowing-conversation.svg" alt="" />
+          <div class="card__text-box">
             <h3>Flowing Conversations</h3>
             <p>
               You wouldn't paginate a conversation in real life, so why do it
@@ -60,10 +66,9 @@
               flow.
             </p>
           </div>
-          <img src="./images/illustration-flowing-conversation.svg" alt="" />
         </div>
         <div class="card">
-          <div>
+          <div class="card__text-box">
             <h3>Your Users</h3>
             <p>
               It takes no time at all to integrate Huddle with your app's
@@ -75,29 +80,40 @@
         </div>
       </div>
     </main>
-    <div class="small-card">
-      <h3>Ready To Build Your Community?</h3>
-      <button class="btn btn-primary">Get Started For Free</button>
+    <div class="container">
+      <div class="card-small">
+        <h2>Ready To Build Your Community?</h2>
+        <button class="btn btn-primary">Get Started For Free</button>
+      </div>
     </div>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <img src="./images/logo.svg" alt="logo" />
+        <img src="./images/logo-white.svg" alt="logo" />
         <div class="footer__sections">
           <div>
             <ul>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                <i class="fas fa-map-marker-alt"></i>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
               </li>
-              <li>+1-543-123-4567</li>
-              <li>example@huddle.com</li>
+              <li>
+                <i class="far fa-envelope"></i>
+                <p>+1-543-123-4567</p>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <p>example@huddle.com</p>
+              </li>
             </ul>
           </div>
           <div>
             <ul>
-              <li>About Us</li>
-              <li>What We Do</li>
-              <li>FAQ</li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
           </div>
           <div>
@@ -121,7 +137,9 @@
             </ul>
           </div>
         </div>
-        <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        <p class="paragraph">
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </p>
       </div>
     </footer>
   </body>

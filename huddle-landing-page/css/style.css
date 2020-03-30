@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:600&display=swap");
 :root {
-  --color-cyan: hsl(179, 62%, 43%);
-  --color-yellow: hsl(71, 73%, 54%);
-  --color-gray: hsl(204, 43%, 93%);
-  --color-grayish-blue: hsl(218, 22%, 67%); }
+  --color-pink: hsl(322, 100%, 66%);
+  --color-cyan-pale: hsl(193, 100%, 96%);
+  --color-cyan-dark: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(208, 11%, 55%); }
 
 *,
 *::before,
@@ -18,12 +18,155 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fff;
-  background-color: var(--color-gray);
-  font-weight: 300;
+  color: var(--color-cyan-dark);
+  /* font-weight: 300;
   padding: 3rem;
   line-height: 1.6;
-  font-size: 1.6rem;
-  display: flex;
-  place-items: center;
+  font-size: 1.6rem; */ }
+
+img {
+  max-width: 100%; }
+
+.container {
+  padding: 0 7rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px; }
+
+.header {
+  background-color: var(--color-cyan-pale);
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-size: cover;
   min-height: 100vh; }
+  .header nav {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header nav button {
+      border-radius: 2.5rem;
+      padding: 1.5rem 5rem;
+      border: none;
+      background: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  .header__content {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0; }
+    .header__content button {
+      border-radius: 2.5rem;
+      padding: 1.5rem 5rem;
+      border: none;
+      background: var(--color-pink);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+    .header__content > div {
+      flex: 4;
+      padding-right: 2rem; }
+      .header__content > div h1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.6rem;
+        margin-bottom: 1.5rem;
+        width: 80%; }
+      .header__content > div p {
+        font-size: 1.6rem;
+        margin-bottom: 3rem; }
+    .header__content > img {
+      flex: 5;
+      padding-left: 2rem; }
+
+.card {
+  display: flex;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 4rem 4rem; }
+  .card:not(:last-child) {
+    margin-bottom: 3rem; }
+  .card__text-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; }
+  .card__text-box p {
+    font-size: 1.6rem; }
+
+main {
+  padding: 10rem 0; }
+
+.card-small {
+  max-width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 5rem 4rem;
+  display: block;
+  margin: 0 auto -50px auto;
+  border-radius: 1rem;
+  background: #fff;
+  z-index: 1;
+  position: relative; }
+  .card-small h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem; }
+  .card-small button {
+    border-radius: 2.5rem;
+    padding: 1.5rem 5rem;
+    border: none;
+    background: var(--color-pink);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
+.footer {
+  z-index: 0;
+  background-color: var(--color-cyan-dark);
+  color: #fff;
+  padding: 9rem 0rem 5rem 0;
+  font-size: 1.4rem; }
+  .footer img {
+    width: 17rem; }
+  .footer .paragraph {
+    display: flex;
+    justify-content: end; }
+  .footer__sections {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0; }
+    .footer__sections ul {
+      list-style: none; }
+      .footer__sections ul li {
+        margin-bottom: 2rem;
+        max-width: 80%;
+        display: flex; }
+        .footer__sections ul li a {
+          text-decoration: none;
+          color: #fff; }
+        .footer__sections ul li i {
+          margin-right: 2rem; }
+    .footer__sections > div:first-child {
+      flex: 2;
+      flex-basis: 19rem; }
+    .footer__sections > div:last-child ul {
+      display: flex; }
+      .footer__sections > div:last-child ul li {
+        border: 0.3px solid #fff;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.6rem;
+        margin-right: 1rem;
+        /*  i {
+            font-size: 1rem;
+            display: inline-block;
+          }
+          &:hover {
+            background: var(--color-cyan-dark);
+            border: none;
+            color: #fff;
+          } */ }
+    .footer__sections > div {
+      flex: 1;
+      flex-basis: 19rem; }

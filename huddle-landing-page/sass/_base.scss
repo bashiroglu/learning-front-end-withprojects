@@ -6,10 +6,10 @@ $font-heading: "Poppins", sans-serif;
 
 // COLOR VARIABLES
 :root {
-  --color-cyan: hsl(179, 62%, 43%);
-  --color-yellow: hsl(71, 73%, 54%);
-  --color-gray: hsl(204, 43%, 93%);
-  --color-grayish-blue: hsl(218, 22%, 67%);
+  --color-pink: hsl(322, 100%, 66%);
+  --color-cyan-pale: hsl(193, 100%, 96%);
+  --color-cyan-dark: hsl(192, 100%, 9%);
+  --color-grayish-blue: hsl(208, 11%, 55%);
 }
 
 *,
@@ -27,13 +27,12 @@ html {
 
 body {
   font-family: $font-primary;
-  color: #fff;
-  background-color: var(--color-gray);
-  font-weight: 300;
+  color: var(--color-cyan-dark);
+  /* font-weight: 300;
   padding: 3rem;
   line-height: 1.6;
-  font-size: 1.6rem;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
+  font-size: 1.6rem; */
+}
+img {
+  max-width: 100%;
 }
