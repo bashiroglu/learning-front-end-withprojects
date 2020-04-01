@@ -1,0 +1,45 @@
+.container {
+  padding: 0 5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px;
+}
+
+.header {
+  background-color: var(--color-violet);
+  background-image: url("../images/bg-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  // width: 100vw;
+  nav {
+    padding: 3rem 0;
+    img {
+      width: 20rem;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  &__photo {
+    flex: 5;
+    margin-top: 4rem;
+    // width: 80%;
+    // height: 40rem;
+    padding: 4rem;
+  }
+  &__text-box {
+    padding: 2rem;
+    flex: 4;
+    // justify-self: center;
+    align-self: center;
+    h1 {
+      font-size: 3.2rem;
+      padding-right: 9rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}

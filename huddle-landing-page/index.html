@@ -12,10 +12,10 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    /> -->
+    />
 
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
@@ -28,7 +28,7 @@
           <img src="./images/logo.svg" alt="" />
           <button>Try It Free</button>
         </nav>
-        <div class="header__content">
+        <div class="header__content ">
           <div>
             <h1>Build The Community Your Fans Will Love</h1>
             <p>
@@ -45,8 +45,8 @@
 
     <main>
       <div class="container">
-        <div class="card">
-          <div class="card__text-box">
+        <div class="card card-one column-reverse">
+          <div class="card__text-box p-l">
             <h3>Grow Together</h3>
             <p>
               Generate meaningful discussions with your audience and build a
@@ -56,8 +56,12 @@
           </div>
           <img src="./images/illustration-grow-together.svg" alt="" />
         </div>
-        <div class="card">
-          <img src="./images/illustration-flowing-conversation.svg" alt="" />
+        <div class="card card-two">
+          <img
+            src="./images/illustration-flowing-conversation.svg"
+            alt=""
+            class="p-l"
+          />
           <div class="card__text-box">
             <h3>Flowing Conversations</h3>
             <p>
@@ -67,8 +71,8 @@
             </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card__text-box">
+        <div class="card card-three column-reverse">
+          <div class="card__text-box p-l ">
             <h3>Your Users</h3>
             <p>
               It takes no time at all to integrate Huddle with your app's
@@ -81,14 +85,14 @@
       </div>
     </main>
     <div class="container">
-      <div class="card-small">
+      <div class="card-small w-100">
         <h2>Ready To Build Your Community?</h2>
         <button class="btn btn-primary">Get Started For Free</button>
       </div>
     </div>
     <footer class="footer">
       <div class="container">
-        <img src="./images/logo-white.svg" alt="logo" />
+        <div><img src="./images/logo-white.svg" alt="logo" /></div>
         <div class="footer__sections">
           <div>
             <ul>
@@ -123,21 +127,21 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-          <div>
+          <div class="align-self-center">
             <ul>
               <li>
                 <a href=""><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""> <i class="fab fa-instagram"></i></a>
               </li>
             </ul>
           </div>
         </div>
-        <p class="paragraph">
+        <p class="paragraph text-align-center">
           &copy; Copyright 2018 Huddle. All rights reserved.
         </p>
       </div>
