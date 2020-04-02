@@ -16,7 +16,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   /* font-weight: 300;
   padding: 3rem;
   line-height: 1.6;
@@ -32,7 +32,8 @@ body {
   background-color: var(--color-violet);
   background-image: url("../images/bg-desktop.svg");
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  min-height: 100vh; }
   .header nav {
     padding: 3rem 0; }
     .header nav img {
@@ -42,14 +43,86 @@ body {
   display: flex; }
   .hero__photo {
     flex: 5;
-    margin-top: 4rem;
-    padding: 4rem; }
+    padding: 3rem;
+    padding-left: 0; }
+    .hero__photo img {
+      width: 95%; }
   .hero__text-box {
     padding: 2rem;
     flex: 4;
-    align-self: center; }
+    align-self: center;
+    padding-left: 0; }
     .hero__text-box h1 {
       font-size: 3.2rem;
-      padding-right: 9rem; }
+      padding-right: 9rem;
+      margin-bottom: 1.5rem; }
     .hero__text-box p {
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.767);
+      margin-bottom: 1.5rem; }
+    .hero__text-box button {
+      padding: 1.2rem 5rem;
+      border-radius: 50px;
+      border: none;
+      color: rgba(103, 75, 175, 0.822);
       font-size: 1.6rem; }
+
+.social-medya-box {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: end; }
+  .social-medya-box ul {
+    display: flex;
+    list-style: none; }
+    .social-medya-box ul li a {
+      text-decoration: none;
+      border: 0.3px solid #fff;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      color: #fff;
+      margin-right: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .social-medya-box ul li a i {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-right: 0; }
+      .social-medya-box ul li a:hover {
+        background: #fff;
+        border: none;
+        color: var(--color-violet); }
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center; }
+  .header {
+    background-image: url("../images/bg-mobile.svg"); }
+  .hero {
+    flex-direction: column; }
+    .hero__photo {
+      flex: 1;
+      padding-left: 0;
+      padding-right: 0; }
+    .hero__text-box {
+      padding: 2rem;
+      flex: 1; }
+      .hero__text-box h1 {
+        font-size: 2.2rem;
+        padding-right: 0;
+        margin-bottom: 1.5rem; }
+      .hero__text-box p {
+        font-size: 1.4rem; }
+      .hero__text-box button {
+        padding: 1rem 8rem;
+        font-size: 1.4rem; }
+  .social-medya-box {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center; }
+    .social-medya-box ul li a {
+      width: 3rem;
+      height: 3rem; }
+      .social-medya-box ul li a i {
+        font-size: 1.6rem; } }
