@@ -65,7 +65,11 @@ body {
       border-radius: 50px;
       border: none;
       color: rgba(103, 75, 175, 0.822);
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.5); }
+      .hero__text-box button:hover {
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.377); }
 
 .social-medya-box {
   padding: 3rem 0;

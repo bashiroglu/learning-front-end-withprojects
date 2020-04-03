@@ -56,6 +56,11 @@
       border: none;
       color: hsla(257, 40%, 49%, 0.822);
       font-size: 1.6rem;
+      cursor: pointer;
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.5);
+      &:hover {
+        box-shadow: 0 4px 2px rgba(0, 0, 0, 0.377);
+      }
     }
   }
 }

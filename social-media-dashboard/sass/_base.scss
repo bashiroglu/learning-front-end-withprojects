@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+// FONT VARIABLES
+$font-primary: "Poppins", sans-serif;
+// $font-heading: "Poppins", sans-serif;
+
+// - White (BG): hsl(0, 0%, 100%)
+// - Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+// - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
+// - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
+// - Very Dark Blue (Text): hsl(230, 17%, 14%)
+// COLOR VARIABLES
+:root {
+  --color-red: hsl(356, 69%, 56%);
+  --color-green: hsl(163, 72%, 41%);
+  --color-instagram: hsl(329, 70%, 58%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(225, 100%, 98%);
+  --color-light-grayish-blue: hsl(227, 47%, 96%);
+  --color-dark-grayish-blue: hsl(228, 12%, 44%);
+  --color-dark-blue: hsl(230, 17%, 14%);
+  --color-light-blue: hsla(230, 17%, 14%, 0.753);
+  --color-light-paragraph-blue: hsla(230, 17%, 14%, 0.603);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: var(--color-dark-blue);
+  min-height: 100vh;
+  background: var(--color-white);
+  /* font-weight: 300;
+  padding: 3rem;
+  line-height: 1.6;
+  font-size: 1.6rem; */
+}

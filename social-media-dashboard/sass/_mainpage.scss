@@ -1,0 +1,113 @@
+.container {
+  padding: 0 12rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px;
+}
+
+.header {
+  padding: 2rem 0 11rem 0;
+  background: var(--color-pale-blue);
+  margin-bottom: -8rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+      color: var(--color-light-blue);
+    }
+  }
+}
+
+.followers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+  padding-bottom: 4rem;
+  .card {
+    background: var(--color-light-grayish-blue);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: center;
+    border-radius: 4px;
+
+    &__nickname-box {
+      img {
+        margin-right: 1rem;
+        width: 2rem;
+      }
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 4.5rem;
+      margin-bottom: 0;
+      line-height: 6rem;
+    }
+    p.followers_paragraph {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      color: var(--color-light-paragraph-blue);
+      margin-bottom: 1.8rem;
+    }
+    &__last-data {
+      display: flex;
+      align-items: center;
+      // color: var(--color-red);
+      img {
+        width: 0.7rem;
+        height: 0.7rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.overview {
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: var(--color-light-paragraph-blue);
+  }
+}
+.small-card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(2, 10rem);
+  grid-gap: 3rem;
+
+  .small-card {
+    background: var(--color-light-grayish-blue);
+    border-radius: 4px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .small-card__name-box {
+      display: flex;
+      justify-content: space-between;
+    }
+    .small-card__number-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .percent-box {
+        display: flex;
+        align-items: center;
+        // padding: 1rem 0;
+        img {
+          width: 0.7rem;
+          height: 0.7rem;
+          margin-right: 0.2rem;
+        }
+      }
+    }
+    // display: flex;
+  }
+}

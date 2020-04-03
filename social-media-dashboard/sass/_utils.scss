@@ -1,0 +1,20 @@
+.down {
+  color: var(--color-red);
+}
+
+.up {
+  color: var(--color-green);
+}
+
+.instagram {
+  border-top: 4px solid var(--color-instagram);
+}
+.facebook {
+  border-top: 4px solid hsl(195, 100%, 50%);
+}
+.twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+.youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --color-red: hsl(356, 69%, 56%);
+  --color-green: hsl(163, 72%, 41%);
+  --color-instagram: hsl(329, 70%, 58%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(225, 100%, 98%);
+  --color-light-grayish-blue: hsl(227, 47%, 96%);
+  --color-dark-grayish-blue: hsl(228, 12%, 44%);
+  --color-dark-blue: hsl(230, 17%, 14%);
+  --color-light-blue: hsla(230, 17%, 14%, 0.753);
+  --color-light-paragraph-blue: hsla(230, 17%, 14%, 0.603); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark-blue);
+  min-height: 100vh;
+  background: var(--color-white);
+  /* font-weight: 300;
+  padding: 3rem;
+  line-height: 1.6;
+  font-size: 1.6rem; */ }
+
+.container {
+  padding: 0 12rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px; }
+
+.header {
+  padding: 2rem 0 11rem 0;
+  background: var(--color-pale-blue);
+  margin-bottom: -8rem; }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__container h4 {
+      color: var(--color-light-blue); }
+
+.followers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+  padding-bottom: 4rem; }
+  .followers .card {
+    background: var(--color-light-grayish-blue);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    text-align: center;
+    border-radius: 4px; }
+    .followers .card__nickname-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .followers .card__nickname-box img {
+        margin-right: 1rem;
+        width: 2rem; }
+    .followers .card h2 {
+      font-size: 4.5rem;
+      margin-bottom: 0;
+      line-height: 6rem; }
+    .followers .card p.followers_paragraph {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      color: var(--color-light-paragraph-blue);
+      margin-bottom: 1.8rem; }
+    .followers .card__last-data {
+      display: flex;
+      align-items: center; }
+      .followers .card__last-data img {
+        width: 0.7rem;
+        height: 0.7rem;
+        margin-right: 1rem; }
+
+.overview h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  color: var(--color-light-paragraph-blue); }
+
+.small-card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(2, 10rem);
+  grid-gap: 3rem; }
+  .small-card__container .small-card {
+    background: var(--color-light-grayish-blue);
+    border-radius: 4px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .small-card__container .small-card .small-card__name-box {
+      display: flex;
+      justify-content: space-between; }
+    .small-card__container .small-card .small-card__number-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .small-card__container .small-card .small-card__number-box .percent-box {
+        display: flex;
+        align-items: center; }
+        .small-card__container .small-card .small-card__number-box .percent-box img {
+          width: 0.7rem;
+          height: 0.7rem;
+          margin-right: 0.2rem; }
+
+.down {
+  color: var(--color-red); }
+
+.up {
+  color: var(--color-green); }
+
+.instagram {
+  border-top: 4px solid var(--color-instagram); }
+
+.facebook {
+  border-top: 4px solid deepskyblue; }
+
+.twitter {
+  border-top: 4px solid #1ca0f2; }
+
+.youtube {
+  border-top: 4px solid #c4032a; }

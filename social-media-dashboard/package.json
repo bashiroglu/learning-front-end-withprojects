@@ -1,7 +1,7 @@
 {
-  "name": "fylo-landing-page",
+  "name": "social-media-dashboard",
   "version": "1.0.0",
-  "description": "fylo-landing-page",
+  "description": "social-media-dashboard",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
