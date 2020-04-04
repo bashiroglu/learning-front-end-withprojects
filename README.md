@@ -12,5 +12,6 @@ List of challanges:
 6. Huddle landing page with alternating feature blocks (add desktop(done), add mobile (done), need some small additions)
 7. Huddle landing page with a single introductory section(add desktop(done), add mobile (done), need to add font for heading)
 8. Fylo landing page with two column layout (need to start from scratch)
-9. Social media dashboard with theme switcher
+9. Social media dashboard with theme switcher(add desktop(done), add mobile (done),add js(done)) need to header in mobile size)
+10. 
    <!-- 10. Insure landing page -->

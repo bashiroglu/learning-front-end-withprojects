@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 // FONT VARIABLES
-$font-primary: "Poppins", sans-serif;
+$font-primary: "Inter", sans-serif;
 // $font-heading: "Poppins", sans-serif;
 
 // - White (BG): hsl(0, 0%, 100%)
@@ -10,7 +10,7 @@ $font-primary: "Poppins", sans-serif;
 // - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
 // - Very Dark Blue (Text): hsl(230, 17%, 14%)
 // COLOR VARIABLES
-:root {
+:root[data-theme="light"] {
   --color-red: hsl(356, 69%, 56%);
   --color-green: hsl(163, 72%, 41%);
   --color-instagram: hsl(329, 70%, 58%);
@@ -22,6 +22,19 @@ $font-primary: "Poppins", sans-serif;
   --color-dark-blue: hsl(230, 17%, 14%);
   --color-light-blue: hsla(230, 17%, 14%, 0.753);
   --color-light-paragraph-blue: hsla(230, 17%, 14%, 0.603);
+}
+:root[data-theme="dark"] {
+  --color-red: hsl(356, 69%, 56%);
+  --color-green: hsl(163, 72%, 41%);
+  --color-instagram: hsl(329, 70%, 58%);
+
+  --color-white: hsl(230, 17%, 14%);
+  --color-pale-blue: hsl(232, 19%, 15%);
+  --color-light-grayish-blue: hsl(228, 28%, 20%);
+  --color-dark-grayish-blue: hsl(228, 34%, 66%);
+  --color-dark-blue: hsl(0, 0%, 100%);
+  --color-light-blue: hsla(233, 14%, 89%, 0.753);
+  --color-light-paragraph-blue: hsla(225, 9%, 82%, 0.603);
 }
 
 *,
@@ -41,6 +54,7 @@ body {
   font-family: $font-primary;
   color: var(--color-dark-blue);
   min-height: 100vh;
+  font-weight: 400;
   background: var(--color-white);
   /* font-weight: 300;
   padding: 3rem;
