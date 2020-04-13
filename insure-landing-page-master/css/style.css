@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+:root {
+  --color-dark-violet: hsl(256, 26%, 20%);
+  --color-grayish-blue: hsl(216, 30%, 68%);
+  --color-very-dark-violet: hsl(270, 9%, 17%);
+  --color-grayish-violet: hsl(273, 4%, 51%);
+  --color-very-light-gray: hsl(0, 0%, 98%); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  /* font-weight: 300;
+  padding: 3rem;
+  line-height: 1.6;
+  font-size: 1.6rem; */ }
+
+.container {
+  padding: 0 10rem;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1440px; }
+
+.nav_container {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between; }
+  .nav_container ul {
+    list-style: none;
+    display: flex; }
+    .nav_container ul li a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: var(--color-grayish-violet);
+      font-family: "Karla", sans-serif;
+      font-weight: 400; }
+    .nav_container ul li:not(:last-child) {
+      margin-right: 3rem; }
+
+.header {
+  background-color: var(--color-dark-violet);
+  height: 20rem; }
+
+.intro__container {
+  display: flex; }
