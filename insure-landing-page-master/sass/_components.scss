@@ -1,0 +1,22 @@
+.btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  &:hover {
+    color: var(--color-dark-violet);
+    background: #fff;
+  }
+}
+
+a.btn-primary.btn {
+  color: var(--color-dark-violet);
+  border: 2px solid var(--color-dark-violet);
+  &:hover {
+    color: #fff;
+    background: var(--color-dark-violet);
+  }
+}

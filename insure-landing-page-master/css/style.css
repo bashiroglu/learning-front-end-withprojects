@@ -3,7 +3,7 @@
   --color-dark-violet: hsl(256, 26%, 20%);
   --color-grayish-blue: hsl(216, 30%, 68%);
   --color-very-dark-violet: hsl(270, 9%, 17%);
-  --color-grayish-violet: hsl(273, 4%, 51%);
+  --color-grayish-violet: hsl(273, 6%, 63%);
   --color-very-light-gray: hsl(0, 0%, 98%); }
 
 *,
@@ -19,6 +19,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  color: var(--color-very-dark-violet);
   min-height: 100vh;
   /* font-weight: 300;
   padding: 3rem;
@@ -26,13 +27,13 @@ body {
   font-size: 1.6rem; */ }
 
 .container {
-  padding: 0 10rem;
+  padding: 0 4rem;
   margin: 0 auto;
   max-width: 100%;
-  width: 1440px; }
+  width: 1200px; }
 
 .nav_container {
-  padding: 2rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: space-between; }
   .nav_container ul {
@@ -50,7 +51,150 @@ body {
 
 .header {
   background-color: var(--color-dark-violet);
-  height: 20rem; }
+  height: 53rem;
+  padding: 7rem 0 0 0;
+  position: relative;
+  z-index: 1; }
+  .header::after {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-position: top right;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 90%;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .header::before {
+    background-image: url(../images/bg-pattern-intro-left-desktop.svg);
+    content: "";
+    height: 90%;
+    width: 90%;
+    left: 0;
+    bottom: -55%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: left bottom;
+    z-index: 0; }
 
 .intro__container {
   display: flex; }
+  .intro__container .intro-textbox {
+    flex: 5;
+    color: white;
+    padding: 6rem 3.5rem 3rem 0;
+    font-family: "DM Serif Display", serif;
+    z-index: 3; }
+    .intro__container .intro-textbox h1 {
+      font-size: 6rem;
+      line-height: 6rem;
+      padding-bottom: 3rem; }
+    .intro__container .intro-textbox p {
+      font-size: 1.6rem;
+      font-family: "Karla", sans-serif;
+      line-height: 2.5rem;
+      padding-bottom: 3rem; }
+  .intro__container .img-box {
+    width: 70%;
+    flex: 4; }
+    .intro__container .img-box img {
+      width: 100%; }
+
+.features {
+  margin: 20rem 0 8rem 0; }
+  .features h2 {
+    font-size: 6rem; }
+  .features__container {
+    display: flex;
+    padding: 4rem 0; }
+    .features__container > div {
+      flex: 1; }
+      .features__container > div img {
+        padding-bottom: 3rem; }
+      .features__container > div h4 {
+        font-size: 3rem;
+        padding-bottom: 2rem; }
+      .features__container > div p {
+        font-size: 1.6rem;
+        width: 90%; }
+
+.details {
+  background-color: var(--color-dark-violet);
+  display: flex;
+  padding: 6rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1; }
+  .details::after {
+    background-image: url(../images/bg-pattern-intro-right-desktop.svg);
+    background-position-x: 101%;
+    background-position-y: -100px;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 250%;
+    width: 250%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0; }
+  .details h2 {
+    flex: 3;
+    font-size: 5rem;
+    font-family: "DM Serif Display", serif;
+    color: #ffffff;
+    line-height: 4.5rem; }
+  .details div {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1; }
+
+.footer {
+  background: var(--color-very-light-gray);
+  padding: 4rem 0;
+  margin-top: 12rem; }
+  .footer .footer__social {
+    padding: 2.5rem 0; }
+
+.footer__section-container {
+  display: flex;
+  line-height: 3rem;
+  text-transform: uppercase; }
+  .footer__section-container .footer__section {
+    flex: 1; }
+    .footer__section-container .footer__section h5 {
+      color: var(--color-grayish-violet);
+      font-size: 1.4rem;
+      padding-bottom: 2rem; }
+    .footer__section-container .footer__section ul {
+      list-style: none; }
+      .footer__section-container .footer__section ul li a {
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--color-very-dark-violet);
+        font-size: 1.4rem; }
+        .footer__section-container .footer__section ul li a:hover {
+          text-decoration: underline; }
+
+.btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer; }
+  .btn:hover {
+    color: var(--color-dark-violet);
+    background: #fff; }
+
+a.btn-primary.btn {
+  color: var(--color-dark-violet);
+  border: 2px solid var(--color-dark-violet); }
+  a.btn-primary.btn:hover {
+    color: #fff;
+    background: var(--color-dark-violet); }

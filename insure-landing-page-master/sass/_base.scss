@@ -9,7 +9,7 @@ $font-heading: "DM Serif Display", serif;
   --color-dark-violet: hsl(256, 26%, 20%);
   --color-grayish-blue: hsl(216, 30%, 68%);
   --color-very-dark-violet: hsl(270, 9%, 17%);
-  --color-grayish-violet: hsl(273, 4%, 51%);
+  --color-grayish-violet: hsl(273, 6%, 63%);
   --color-very-light-gray: hsl(0, 0%, 98%);
 }
 
@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: $font-primary;
-  // color: #fff;
+  color: var(--color-very-dark-violet);
   min-height: 100vh;
   /* font-weight: 300;
   padding: 3rem;
