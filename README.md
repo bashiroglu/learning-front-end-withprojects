@@ -14,3 +14,4 @@ List of challanges:
 8. Fylo landing page with two column layout (need to start from scratch)
 9. Social media dashboard with theme switcher(add desktop(done), add mobile (done),add js(done)) need to header in mobile size)
 10. Insure landing page(add desktop(done), add mobile ())
+11. Pricing component with toggle(add desktop(done), add mobile (done), add JS (done))
