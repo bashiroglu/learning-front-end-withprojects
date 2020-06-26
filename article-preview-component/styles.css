@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+:root {
+  --color-very-dark-blue: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(214, 17%, 51%);
+  --color-grayish-blue: hsl(212, 23%, 69%);
+  --color-light-grayish: hsl(210, 46%, 95%);
+}
+body {
+  background: var(--color-light-grayish);
+}
+
+.container {
+  display: flex;
+  max-width: 55vw;
+  background: #fff;
+  border-radius: 0.7rem;
+  margin: 8rem auto;
+  color: var(--color-very-dark-blue);
+  height: 100%;
+}
+.image-box {
+  flex-basis: 40%;
+  background-image: url("./images/drawers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* align-self: stretch; */
+  /* height: 100%; */
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.text-box {
+  padding: 2.7rem;
+  flex-basis: 60%;
+}
+.text-box h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.text-box p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.user-box {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.user-box img {
+  width: 3rem;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user-box .user-name {
+  margin-right: auto;
+}
+
+.user-box button {
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  height: 100%;
+  padding: 12px 12px;
+  background-color: var(--color-light-grayish);
+}
+.user-box button svg {
+  fill: var(--color-very-dark-blue);
+}
+.user-box button.active {
+  background-color: var(--color-very-dark-blue);
+}
+.user-box button.active svg {
+  fill: var(--color-light-grayish);
+}
+.user-box h3 {
+  font-size: 1.1em;
+}
+.user-box p {
+  font-size: 0.9em;
+  color: var(--color-grayish-blue);
+}
