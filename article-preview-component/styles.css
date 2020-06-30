@@ -63,8 +63,50 @@ body {
 
 .user-box {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
+
+.share-container {
+  position: absolute;
+  left: 69%;
+  bottom: 75px;
+  opacity: 1;
+  display: flex;
+}
+.share-buttons {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+}
+.share-buttons p {
+  margin-bottom: 0;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.share-buttons ul {
+  display: flex;
+  list-style: none;
+}
+.share-buttons ul li {
+  padding: 0 0.6rem;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+  position: absolute;
+  left: 42%;
+  bottom: -10px;
+}
+
 .user-details {
   display: flex;
 }
