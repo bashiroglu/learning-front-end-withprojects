@@ -1,0 +1,216 @@
+@import "./base";
+
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.header {
+  background-image: url(../images/bg-header-desktop.png);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 10rem 0 16rem 0;
+  //   justify-content: center;
+
+  //   text-align: center;
+  &__content {
+    margin: 0 auto;
+  }
+  &__img {
+    height: 10rem;
+    margin-bottom: 3rem;
+  }
+}
+.heading-primary {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.paragraph-primary {
+  font-size: 2rem;
+  width: 60%;
+  //   margin: 0 auto;
+  //   padding: 0 35rem;
+  //   font-weight: 600;
+  //   margin-bottom: 1.6rem;
+}
+.heading-secondary {
+  font-size: 3.3rem;
+  margin-bottom: 1.5rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.paragraph-secondary {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  // width: 60%;
+}
+.btn {
+  border: none;
+  padding: 1.3rem 3rem;
+  border-radius: 4rem;
+  color: var(--color-white);
+  cursor: pointer;
+  //   font-weight: 600;
+
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+}
+.btn-green {
+  background-color: rgba(hsl(171, 66%, 44%), 0.8);
+  box-shadow: 0 2px 1px rgba(hsl(171, 66%, 44%), 0.9);
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(hsl(171, 66%, 44%), 0.4);
+  }
+  &:active {
+    background-color: rgba(hsl(171, 66%, 44%), 0.4);
+    box-shadow: 0 0 1px rgba(hsl(171, 66%, 44%), 0.9);
+    transform: translateY(2px);
+  }
+}
+.btn-purple {
+  background-color: rgba(hsl(233, 100%, 69%), 0.8);
+  box-shadow: 0 2px 1px rgba(hsl(233, 100%, 69%), 0.9);
+  transition: all 0.2s;
+  &:hover {
+    background-color: rgba(hsl(233, 100%, 69%), 0.4);
+  }
+  &:active {
+    background-color: rgba(hsl(233, 100%, 69%), 0.4);
+    box-shadow: 0 0 1px rgba(hsl(233, 100%, 69%), 0.9);
+    transform: translateY(2px);
+  }
+}
+.history {
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-box {
+    flex: 0 0 52%;
+    // flex-basis: 51vw;
+    margin-left: -2%;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__features-box {
+    flex: 0 0 48%;
+    padding: 0 8rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    // align-content: center;
+    justify-content: center;
+
+    // flex-basis: 49vw;
+  }
+  &__feature-box {
+  }
+}
+.access {
+  &__img-box {
+    img {
+      max-width: 90vw;
+      display: block;
+    }
+  }
+}
+.workflow {
+  &__features {
+    display: flex;
+    align-items: center;
+    // align-content: center;
+  }
+  &__feature-box {
+    padding: 0 1rem;
+    .img-blacklist {
+    }
+    img {
+      height: 4.9rem;
+      // width: 5.5rem;
+    }
+  }
+}
+
+.companies {
+  display: flex;
+  // justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__image-box {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin-bottom: 2rem;
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}
+footer {
+  background-color: rgba(hsl(201, 11%, 66%), 0.2);
+}
+.footer {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem;
+  justify-content: space-between;
+  // background-color: #fff;
+  &__company {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    max-height: 6rem;
+    margin-right: 9rem;
+    align-self: center;
+  }
+  &__social-media {
+    align-self: center;
+    // display: flex;
+    // justify-content: space-between;
+    a {
+      margin-right: 1rem;
+      svg {
+        fill: var(--color-nuetral-dark-gray);
+      }
+    }
+    a:hover {
+      svg {
+        backface-visibility: hidden;
+        fill: var(--color-primary-strong);
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+.company {
+  &__links {
+    list-style: none;
+    text-align: left;
+    margin-right: 7rem;
+  }
+  &__item {
+    text-decoration: none;
+    font-size: 1.6rem;
+    letter-spacing: 1.3px;
+    line-height: 4rem;
+    color: inherit;
+    &:hover {
+      color: var(--color-primary-strong);
+    }
+  }
+}
