@@ -3,7 +3,10 @@
 section {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 2vw 2vw;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5vw 2vw;
+  }
 }
 .header {
   background-image: url(../images/bg-header-desktop.png);
@@ -13,9 +16,6 @@ section {
   display: flex;
   align-items: center;
   padding: 10rem 0 16rem 0;
-  //   justify-content: center;
-
-  //   text-align: center;
   &__content {
     margin: 0 auto;
   }
@@ -23,33 +23,50 @@ section {
     height: 10rem;
     margin-bottom: 3rem;
   }
+  &__button-box {
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+    }
+  }
 }
 .heading-primary {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1.6rem;
-}
-.paragraph-primary {
-  font-size: 2rem;
-  width: 60%;
-  //   margin: 0 auto;
-  //   padding: 0 35rem;
-  //   font-weight: 600;
-  //   margin-bottom: 1.6rem;
+  padding: 0 2vw;
 }
 .heading-secondary {
   font-size: 3.3rem;
   margin-bottom: 1.5rem;
+  padding: 0 2vw;
 }
 .heading-tertiary {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+
+.paragraph-primary {
+  font-size: 2rem;
+  padding: 0 2vw;
+
+  //   margin: 0 auto;
+  //   padding: 0 35rem;
+  //   font-weight: 600;
+  //   margin-bottom: 1.6rem;
+}
 .paragraph-secondary {
   font-size: 1.8rem;
   line-height: 3rem;
-  // width: 60%;
+  padding: 0 2vw;
 }
+.paragraph-tertiary {
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+
 .btn {
   border: none;
   padding: 1.3rem 3rem;
@@ -60,6 +77,16 @@ section {
 
   font-size: 1.6rem;
   letter-spacing: 1.2px;
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem 8rem;
+  }
+  &:first-child {
+    margin-right: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
 }
 .btn-green {
   background-color: rgba(hsl(171, 66%, 44%), 0.8);
@@ -92,15 +119,26 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 
   &__img-box {
     flex: 0 0 52%;
     // flex-basis: 51vw;
     margin-left: -2%;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 0;
+      margin-bottom: 4rem;
+    }
     img {
       max-width: 100%;
+      @media only screen and (max-width: $bp-medium) {
+        max-width: 70%;
+      }
     }
+    align-items: center;
   }
   &__features-box {
     flex: 0 0 48%;
@@ -112,11 +150,14 @@ section {
     justify-content: center;
 
     // flex-basis: 49vw;
-  }
-  &__feature-box {
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      padding: 0 3vw;
+    }
   }
 }
 .access {
+  margin: 6rem auto;
   &__img-box {
     img {
       max-width: 90vw;
@@ -129,11 +170,13 @@ section {
     display: flex;
     align-items: center;
     // align-content: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
   &__feature-box {
-    padding: 0 1rem;
-    .img-blacklist {
-    }
+    padding: 4rem 1rem;
+
     img {
       height: 4.9rem;
       // width: 5.5rem;
@@ -146,16 +189,40 @@ section {
   // justify-content: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 6rem auto;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+  }
   &__image-box {
     display: flex;
     align-items: center;
     height: 5rem;
     margin-bottom: 2rem;
+
     &:not(:last-child) {
       margin-right: 3rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+      }
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 4rem;
     }
   }
 }
+.applications {
+  &__button-box {
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+    }
+  }
+  margin: 6rem auto;
+}
+
 footer {
   background-color: rgba(hsl(201, 11%, 66%), 0.2);
 }
@@ -165,17 +232,29 @@ footer {
   margin: 0 auto;
   padding: 3rem;
   justify-content: space-between;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   // background-color: #fff;
   &__company {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
     max-height: 6rem;
     margin-right: 9rem;
     align-self: center;
+    @media only screen and (max-width: $bp-small) {
+      // text-align: center;
+      margin-right: 0;
+    }
   }
   &__social-media {
     align-self: center;
@@ -202,6 +281,13 @@ footer {
     list-style: none;
     text-align: left;
     margin-right: 7rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 3.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      margin-right: 0;
+    }
   }
   &__item {
     text-decoration: none;
