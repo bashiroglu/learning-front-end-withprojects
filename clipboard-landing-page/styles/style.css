@@ -243,20 +243,25 @@ footer {
     flex-wrap: wrap; }
     @media only screen and (max-width: 43em) {
       .footer__company {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-bottom: 4rem; } }
   .footer__logo {
     max-height: 6rem;
     margin-right: 9rem;
     align-self: center; }
     @media only screen and (max-width: 43em) {
       .footer__logo {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 4rem; } }
   .footer__social-media {
     align-self: center; }
     .footer__social-media a {
       margin-right: 1rem; }
       .footer__social-media a svg {
         fill: var(--color-nuetral-dark-gray); }
+      @media only screen and (max-width: 43em) {
+        .footer__social-media a {
+          margin-right: 3rem; } }
     .footer__social-media a:hover svg {
       backface-visibility: hidden;
       fill: var(--color-primary-strong);
@@ -265,10 +270,10 @@ footer {
 .company__links {
   list-style: none;
   text-align: left;
-  margin-right: 7rem; }
+  margin-right: 5rem; }
   @media only screen and (max-width: 50em) {
     .company__links {
-      margin-right: 3.5rem; } }
+      margin-right: 3rem; } }
   @media only screen and (max-width: 43em) {
     .company__links {
       text-align: center;

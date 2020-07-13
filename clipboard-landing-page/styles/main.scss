@@ -52,10 +52,6 @@ section {
   font-size: 2rem;
   padding: 0 2vw;
 
-  //   margin: 0 auto;
-  //   padding: 0 35rem;
-  //   font-weight: 600;
-  //   margin-bottom: 1.6rem;
 }
 .paragraph-secondary {
   font-size: 1.8rem;
@@ -244,6 +240,7 @@ footer {
     flex-wrap: wrap;
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
+      margin-bottom: 4rem;
     }
   }
 
@@ -254,6 +251,7 @@ footer {
     @media only screen and (max-width: $bp-small) {
       // text-align: center;
       margin-right: 0;
+      margin-bottom: 4rem;
     }
   }
   &__social-media {
@@ -264,6 +262,10 @@ footer {
       margin-right: 1rem;
       svg {
         fill: var(--color-nuetral-dark-gray);
+      }
+      @media only screen and (max-width: $bp-small) {
+        // text-align: center;
+        margin-right: 3rem;
       }
     }
     a:hover {
@@ -280,9 +282,10 @@ footer {
   &__links {
     list-style: none;
     text-align: left;
-    margin-right: 7rem;
+    margin-right: 5rem;
+
     @media only screen and (max-width: $bp-medium) {
-      margin-right: 3.5rem;
+      margin-right: 3rem;
     }
     @media only screen and (max-width: $bp-small) {
       text-align: center;
@@ -294,6 +297,7 @@ footer {
     font-size: 1.6rem;
     letter-spacing: 1.3px;
     line-height: 4rem;
+
     color: inherit;
     &:hover {
       color: var(--color-primary-strong);
