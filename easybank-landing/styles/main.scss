@@ -1,0 +1,45 @@
+@import "base";
+@import "components";
+@import "layout";
+
+.header {
+  //   min-height: 90vh;
+  //   max-width: 100vw;
+  //   background-color: var(--color-nuetral-very-light-grayish-blue);
+}
+.hero {
+  background-color: var(--color-nuetral-very-light-grayish-blue);
+  min-height: 100vh;
+  display: flex;
+  &__image {
+    min-height: 41rem;
+    background-image: none;
+
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 17.5rem;
+    // height: 100%;
+    // position: relative;
+
+    &::after {
+      background-size: cover;
+      width: 120%;
+      height: 122%;
+      background-size: 100%;
+      background-position: center 90%;
+      top: 0%;
+      left: 27%;
+    }
+    &::before {
+      content: "";
+      height: 100%;
+      width: 150%;
+      position: absolute;
+      background-image: url(../images/bg-intro-desktop.svg);
+      background-size: 123%;
+      background-position: 0 83%;
+      background-repeat: no-repeat;
+    }
+  }
+}

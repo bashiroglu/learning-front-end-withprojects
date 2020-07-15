@@ -1,0 +1,33 @@
+:root {
+  --font-primary: "Public Sans", sans-serif;
+
+  --color-primary-blue: hsl(233, 26%, 24%);
+  --color-primary-dark-lime-green: hsl(136, 65%, 51%);
+  --color-primary-bright-cyan: hsl(192, 70%, 51%);
+
+  --color-nuetral-grayish-blue: hsl(233, 8%, 62%);
+  --color-nuetral-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-nuetral-very-light-grayish-blue: hsl(0, 0%, 98%);
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  //   @media only screen and (max-width: $bp-medium) {
+  //     font-size: 52.5%;
+  //   }
+}
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
