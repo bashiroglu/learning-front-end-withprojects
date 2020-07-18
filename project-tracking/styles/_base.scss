@@ -1,3 +1,4 @@
+$bp-large: 60em;
 $bp-medium: 50em;
 $bp-small: 44em;
 
@@ -25,17 +26,19 @@ $bp-small: 44em;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  @media only screen and (max-width: $bp-large) {
+    font-size: 58.5%;
+  }
   @media only screen and (max-width: $bp-medium) {
     font-size: 52.5%;
   }
   @media only screen and (max-width: $bp-small) {
-    font-size: 46.5%;
+    font-size: 50.5%;
   }
 }
 body {
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 1.8rem;
-  position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
