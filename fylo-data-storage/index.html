@@ -20,34 +20,56 @@
   </head>
   <body>
     <div class="background">
-      <img src="./images/bg-desktop.png"  class="background--desktop" alt="">
-      <img src="./images/bg-mobile.png"  class="background--mobile" alt="">
+      <img src="./images/bg-desktop.png" class="background--desktop" alt="" />
+      <img src="./images/bg-mobile.png" class="background--mobile" alt="" />
     </div>
-    <main>
-      <section class="hero">
-        <article class="hero__files-container">
-          <img class="logo" src="./images/logo.svg" alt="" />
-          <div class="files">
-            <div><img src="./images/icon-document.svg" alt="" /></div>
-            <div><img src="./images/icon-folder.svg" alt="" /></div>
-            <div><img src="./images/icon-upload.svg" alt="" /></div>
+
+    <section class="hero">
+      <article class="hero__files-container">
+        <img
+          class="hero__files-container-logo"
+          src="./images/logo.svg"
+          alt=""
+        />
+        <div class="hero__files">
+          <div class="hero__icon-container">
+            <img
+              class="hero__file-icon"
+              src="./images/icon-document.svg"
+              alt=""
+            />
           </div>
-        </article>
-        <article class="hero__space-container">
-          <p>You’ve used <span>815 GB</span> of your storage</p>
-          <div class="progress-bar">
-            <div class="bar">
-              <div class="loaded-part"><div class="dot"></div></div>
-            </div>
+          <div class="hero__icon-container">
+            <img
+              class="hero__file-icon"
+              src="./images/icon-folder.svg"
+              alt=""
+            />
           </div>
-          <div class="labels">
-            <p>0 GB</p>
-            <p>1000 GB</p>
+          <div class="hero__icon-container">
+            <img
+              class="hero__file-icon"
+              src="./images/icon-upload.svg"
+              alt=""
+            />
           </div>
-        </article>
-      </section>
-    </main>
-    <!-- <main>
+        </div>
+      </article>
+      <article class="hero__space-container">
+        <p class="hero__paragraph">
+          You’ve used <span>815 GB</span> of your storage
+        </p>
+        <div class="hero__progress-bar">
+          <div class="hero__loaded-part"><div class="hero__dot"></div></div>
+        </div>
+        <div class="hero__labels">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+      </article>
+    </section>
+  </body>
+  <!-- <main>
       <section>
         <article class="files-container">
           <img class="logo" src="./images/logo.svg" alt="" />
@@ -72,6 +94,5 @@
       </section>
 
       185 GB Left -->
-    </main> 
-  </body>
+  <!-- </main>  -->
 </html>

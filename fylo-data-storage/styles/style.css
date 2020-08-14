@@ -1,7 +1,15 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
 
 :root {
   --color-pale-blue: hsl(243, 100%, 93%);
@@ -23,7 +31,89 @@ body {
   min-height: 100vh;
   background-color: var(--color-very-dark-blue);
   overflow: hidden;
-  font-family: Raleway; }
+  font-family: Raleway;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .hero {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80vw;
+  margin: 0 auto; }
+  .hero__files-container {
+    background-color: var(--color-dark-blue);
+    padding: 4rem 7rem 4rem 4rem;
+    max-width: 30rem;
+    flex: 0 0 30%;
+    border-radius: 0.5rem 9rem 0.5rem 0.5rem; }
+  .hero__files-container-logo {
+    width: 11rem;
+    margin-bottom: 2.5rem; }
+  .hero__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-very-dark-blue); }
+    .hero__icon-container:not(:last-child) {
+      margin-right: 1.3rem; }
+  .hero__file-icon {
+    width: 1.7rem; }
+  .hero__files {
+    display: flex; }
+  .hero__space-container {
+    background-color: var(--color-dark-blue);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    color: var(--color-pale-blue);
+    flex: 0 0 60%; }
+  .hero__paragraph {
+    font-size: 1.4rem;
+    font-weight: 400; }
+    .hero__paragraph span {
+      font-weight: 700;
+      color: #fff; }
+  .hero__labels {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem; }
+  .hero__progress-bar {
+    margin: 1rem 0;
+    height: 2.3rem;
+    background-color: var(--color-very-dark-blue);
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center; }
+  .hero__loaded-part {
+    background-image: linear-gradient(to right, #ff9f98, #ff5297);
+    height: 1.6rem;
+    margin-left: 2px;
+    width: 75%;
+    max-width: 75%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: loading 3s ease-in-out; }
+  .hero__dot {
+    margin-right: 3px;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #fff;
+    border-radius: 100%; }
+
+@keyframes loading {
+  0% {
+    width: 5%; }
+  50% {
+    width: 35%; }
+  100% {
+    width: 75%; } }
