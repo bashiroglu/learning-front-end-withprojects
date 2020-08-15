@@ -1,0 +1,53 @@
+// FONT VARIABLES
+$font-primary: "Poppins", sans-serif;
+
+// ### Primary
+
+// - Cyan: hsl(180, 66%, 49%)
+// - Dark Violet: hsl(257, 27%, 26%)
+
+// ### Secondary
+
+// - Red: hsl(0, 87%, 67%)
+
+// ### Neutral
+
+// - Gray: hsl(0, 0%, 75%)
+// - Grayish Violet: hsl(257, 7%, 63%)
+// - Very Dark Blue: hsl(255, 11%, 22%)
+// - Very Dark Violet: hsl(260, 8%, 14%)
+
+// COLOR VARIABLES
+:root {
+  --color-primary-cyan: hsl(180, 66%, 49%);
+  --color-primary-cyan-light: hsla(180, 66%, 75%, 0.926);
+  --color-primary-dark-violet: hsl(257, 27%, 26%);
+
+  --color-secondary-red: hsl(0, 87%, 67%);
+
+  --color-neutral-gray: hsl(0, 0%, 75%);
+  --color-neutral-grayish: hsl(257, 7%, 63%);
+  --color-neutral-light-grayish: hsla(240, 11%, 95%, 0.904);
+  --color-neutral-dark-blue: hsl(255, 11%, 22%);
+  --color-neutral-dark-violet: hsl(260, 8%, 14%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  background: #fff;
+  color: var(--color-neutral-dark-violet);
+  font-size: 1.6rem;
+}

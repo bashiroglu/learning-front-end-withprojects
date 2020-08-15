@@ -1,0 +1,21 @@
+.btn {
+  background-color: var(--color-primary-cyan);
+  padding: 0.9rem 2.5rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
+  &:hover {
+    background-color: var(--color-primary-cyan-light);
+  }
+}
+.btn.btn-copied {
+  background-color: var(--color-primary-dark-violet);
+}
+.btn-rounded-big {
+  border-radius: 2rem;
+}
+.btn-rounded-small {
+  border-radius: 0.8rem;
+}
