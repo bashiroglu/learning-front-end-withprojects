@@ -1,21 +1,8 @@
 // FONT VARIABLES
 $font-primary: "Poppins", sans-serif;
-
-// ### Primary
-
-// - Cyan: hsl(180, 66%, 49%)
-// - Dark Violet: hsl(257, 27%, 26%)
-
-// ### Secondary
-
-// - Red: hsl(0, 87%, 67%)
-
-// ### Neutral
-
-// - Gray: hsl(0, 0%, 75%)
-// - Grayish Violet: hsl(257, 7%, 63%)
-// - Very Dark Blue: hsl(255, 11%, 22%)
-// - Very Dark Violet: hsl(260, 8%, 14%)
+$bp-medium: 62em;
+$bp-small: 56em;
+$bp-extra-small: 45em;
 
 // COLOR VARIABLES
 :root {
@@ -43,6 +30,12 @@ $font-primary: "Poppins", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 58%;
+  }
+  @media only screen and (max-width: $bp-extra-small) {
+    font-size: 52%;
+  }
 }
 
 body {

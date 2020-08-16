@@ -10,6 +10,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 52em) {
+    html {
+      font-size: 52.5%; } }
 
 :root {
   --color-pale-blue: hsl(243, 100%, 93%);
@@ -39,15 +42,23 @@ body {
 .hero {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: flex-end;
   width: 80vw;
   margin: 0 auto; }
+  @media only screen and (max-width: 52em) {
+    .hero {
+      flex-direction: column;
+      align-items: center; } }
   .hero__files-container {
     background-color: var(--color-dark-blue);
     padding: 4rem 7rem 4rem 4rem;
     max-width: 30rem;
     flex: 0 0 30%;
     border-radius: 0.5rem 9rem 0.5rem 0.5rem; }
+    @media only screen and (max-width: 52em) {
+      .hero__files-container {
+        flex: 1; } }
   .hero__files-container-logo {
     width: 11rem;
     margin-bottom: 2.5rem; }
@@ -68,10 +79,44 @@ body {
     display: flex; }
   .hero__space-container {
     background-color: var(--color-dark-blue);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 0.5rem;
     color: var(--color-pale-blue);
-    flex: 0 0 60%; }
+    flex: 0 0 60%;
+    position: relative; }
+    @media only screen and (max-width: 52em) {
+      .hero__space-container {
+        flex: 1; } }
+  .hero__label-box {
+    position: absolute;
+    background-color: #fff;
+    padding: 1.5rem;
+    top: -40%;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    border-end-end-radius: 0; }
+  .hero__label-main {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-very-dark-blue);
+    margin-right: 1.5rem; }
+  .hero__label-sub {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-grayish-blue);
+    text-transform: uppercase; }
+  .hero__label-tri {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: -1.4rem;
+    width: 0;
+    height: 0;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    right: 0; }
   .hero__paragraph {
     font-size: 1.4rem;
     font-weight: 400; }

@@ -1,19 +1,42 @@
 .navbar {
   display: flex;
   padding: 3rem 8rem 5rem 8rem;
-
+  position: relative;
+  @media only screen and (max-width: $bp-small) {
+    justify-content: space-between;
+  }
+  @media only screen and (max-width: $bp-extra-small) {
+    padding: 3rem 4rem 3rem 4rem;
+  }
+  &__ham-box {
+    display: none;
+    @media only screen and (max-width: $bp-small) {
+      justify-content: space-between;
+      display: block;
+      cursor: pointer;
+    }
+  }
   &__logo {
     margin-right: 3rem;
+    @media only screen and (max-width: $bp-extra-small) {
+      img {
+        width: 75%;
+      }
+    }
   }
   &__links {
     display: flex;
     flex: 1;
     justify-content: space-between;
+    // @media only screen and (max-width: $bp-small) {
+    //   display: none;
+    // }
   }
   &__links-box {
     display: flex;
     align-items: center;
     list-style: none;
+
     a {
       text-decoration: none;
       font-size: 1.6rem;
@@ -35,35 +58,67 @@
       }
     }
   }
-  &__navigation-box {
-  }
 }
 .header {
   display: flex;
   justify-content: space-between;
   padding: 0 0 12rem 8rem;
   align-items: center;
-
+  overflow: hidden;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    padding: 0 0 12rem 8rem;
+  }
+  @media only screen and (max-width: $bp-extra-small) {
+    padding: 0 0 12rem 4rem;
+  }
   &__text-box {
+    @media only screen and (max-width: $bp-small) {
+      order: 2;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 8rem;
+    }
+    @media only screen and (max-width: $bp-extra-small) {
+      padding-right: 4rem;
+    }
     h1 {
       font-size: 6rem;
       line-height: 7.7rem;
       width: 80%;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 4.5rem;
+        width: 100%;
+      }
     }
     p {
       font-size: 1.6rem;
       line-height: 2.6rem;
       width: 80%;
       margin-bottom: 2.6rem;
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
     }
     button {
       font-size: 1.6rem;
       font-weight: 700;
+      @media only screen and (max-width: $bp-small) {
+        font-size: 2.1rem;
+        padding: 1rem 3rem;
+        border-radius: 3.5rem;
+      }
     }
   }
   &__draw {
     // max-width: 60%;
     flex: 0 0 50%;
+    @media only screen and (max-width: $bp-small) {
+      order: 1;
+      margin-right: -20rem;
+    }
     img {
       width: 100%;
     }
@@ -73,9 +128,12 @@
 .functionality {
   background-color: var(--color-neutral-light-grayish);
   padding: 3rem 8rem 5rem 8rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem 4rem 5rem 4rem;
+  }
 }
-.form-link {
-}
+// .form-link {
+// }
 .link-input {
   padding: 5rem;
   background-color: var(--color-primary-dark-violet);
@@ -85,6 +143,11 @@
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 3rem;
+  @media only screen and (max-width: $bp-extra-small) {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 3rem;
+  }
 
   &::before {
     content: "";
@@ -95,6 +158,11 @@
     top: 0;
     left: 0;
     z-index: 1;
+    @media only screen and (max-width: $bp-extra-small) {
+      background-image: url(../images/bg-boost-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
   input {
     margin-right: 0;
@@ -106,6 +174,10 @@
     font-family: $font-primary;
     font-size: 1.6rem;
     z-index: 2;
+    @media only screen and (max-width: $bp-extra-small) {
+      margin-right: 0;
+      margin-bottom: 2.5rem;
+    }
   }
   button {
     padding: 1rem 3.3rem;
@@ -115,12 +187,19 @@
 .links-output {
   background-color: #fff;
   display: flex;
+  @media only screen and (max-width: $bp-extra-small) {
+    flex-direction: column;
+    align-items: stretch;
+  }
   align-items: center;
   padding: 1.4rem 3rem;
   border-radius: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   button {
-    width: 13rem;
+    width: 11rem;
+    @media only screen and (max-width: $bp-extra-small) {
+      width: 100%;
+    }
   }
 }
 .links-box {
@@ -128,6 +207,13 @@
   display: flex;
   justify-content: space-between;
   margin-right: 2rem;
+  @media only screen and (max-width: $bp-extra-small) {
+    margin-right: 0;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
   h3 {
     font-weight: 500;
   }
@@ -142,11 +228,16 @@
 
 .statistics {
   padding: 4rem 0 6rem 0;
+
   &__heading {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 7rem;
+    }
+
     h2 {
       font-size: 3rem;
       margin-bottom: 1.6rem;
@@ -154,6 +245,9 @@
     p {
       width: 60%;
       color: var(--color-neutral-grayish);
+      @media only screen and (max-width: $bp-small) {
+        width: 100%;
+      }
     }
   }
   &__cards {
@@ -161,6 +255,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      text-align: center;
+    }
     &::before {
       content: "";
       background: var(--color-primary-cyan);
@@ -174,6 +272,14 @@
   &__card {
     background-color: #fff;
     padding: 6rem 2rem 4rem 2rem;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      // align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
     z-index: 1;
     position: relative;
     .circle {
@@ -182,20 +288,34 @@
       justify-content: center;
       height: 7.5rem;
       top: -4rem;
-      left: 3rem;
+
       position: absolute;
       width: 7.5rem;
       border-radius: 50%;
       background-color: var(--color-primary-dark-violet);
+      @media only screen and (max-width: $bp-small) {
+        align-self: center;
+        position: absolute;
+      }
     }
     &:not(:last-child) {
       margin-right: 3rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 8rem;
+      }
     }
     &:nth-child(2) {
       margin-top: 10rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 0;
+      }
     }
     &:nth-child(3) {
       margin-top: 20rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 0;
+      }
     }
     h4 {
       margin-bottom: 1.6rem;
@@ -219,6 +339,9 @@
   &::before {
     content: "";
     background-image: url(../images/bg-boost-desktop.svg);
+    @media only screen and (max-width: $bp-small) {
+      background-image: url(../images/bg-boost-mobile.svg);
+    }
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -237,6 +360,12 @@
   }
   button {
     z-index: 5;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.1rem;
+      padding: 1rem 3rem;
+      border-radius: 3.5rem;
+    }
   }
 }
 .footer {
@@ -244,20 +373,48 @@
   padding: 4rem 8rem;
   display: flex;
   justify-content: space-between;
+  .logo-container {
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: $bp-extra-small) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
   &__links {
     flex: 0 0 50%;
     display: flex;
     color: #fff;
+    @media only screen and (max-width: $bp-small) {
+      flex: 1;
+    }
+    @media only screen and (max-width: $bp-extra-small) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     ul {
-      margin-right: 5rem;
+      margin-right: 7rem;
       list-style: none;
+      @media only screen and (max-width: $bp-extra-small) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
       p {
         margin-bottom: 2.5rem;
       }
       a {
         color: rgba(255, 255, 255, 0.77);
         text-decoration: none;
+        &:hover {
+          color: #fff;
+        }
       }
       li {
         &:not(:last-child) {
@@ -265,5 +422,125 @@
         }
       }
     }
+  }
+  &__social-icons ul {
+    display: flex;
+    list-style: none;
+  }
+  &__social-icons ul li {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: $bp-extra-small) {
+  .links-output {
+    h3 {
+      padding: 0.4rem 0;
+    }
+    .links-box {
+      margin-bottom: 0.8rem;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: $bp-small) {
+  .statistics__cards {
+    &::before {
+      content: "";
+      background: var(--color-primary-cyan);
+      height: 70%;
+      width: 1rem;
+      position: absolute;
+      z-index: 0;
+      margin-top: 15rem;
+    }
+  }
+  // &::before {
+  //   content: "";
+  //   background: var(--color-primary-cyan);
+  //   height: 100%;
+  //   width: 1rem;
+  //   position: absolute;
+  //   z-index: 0;
+  //   margin-top: 15rem;
+  // }
+  .navbar {
+    position: relative;
+    display: flex;
+    // justify-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+
+    .close {
+      display: none;
+    }
+
+    .ham-link.mobile .ham {
+      display: none;
+    }
+    .ham-link.mobile .close {
+      display: block;
+    }
+
+    &__links.mobile {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &__links {
+      position: absolute;
+      flex-direction: column;
+      width: 90%;
+      top: 8rem;
+      left: 5%;
+      border-radius: 2rem;
+      overflow: hidden;
+      padding: 0 2rem;
+      background-color: var(--color-primary-dark-violet);
+      // opacity: 0;
+      transform: translateY(-200%);
+      transition: transform 0.3s ease-in;
+    }
+    &__links-box {
+      &:first-child {
+        border-bottom: 0.3px solid var(--color-neutral-light-grayish);
+      }
+      flex-direction: column;
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+
+      li:not(:last-child) {
+        margin-right: 0;
+      }
+      li {
+        a {
+          font-size: 1.9rem;
+          padding: 1rem 3rem;
+          display: inline-block;
+
+          color: var(--color-neutral-light-grayish);
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &__sign-box {
+      .btn-sign-up {
+        // color: #fff;
+        // &:hover {
+        //   color: #fff;
+        // }
+        margin: 2rem 3rem;
+      }
+    }
+    // &__navigation-box {
+    //   flex-direction: column;
+    // }
   }
 }
