@@ -3,11 +3,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem 8rem;
+
+  &__logo-mobile {
+    display: none;
+  }
   @media only screen and (max-width: $bp-medium) {
     padding: 4rem 4rem;
   }
   .ham-container {
     display: none;
+    .close {
+      display: none;
+    }
   }
 
   &__links {
@@ -135,6 +142,7 @@
       text-decoration: none;
       display: block;
       padding: 2rem 3rem;
+      cursor: pointer;
       // border-bottom: 2px solid #000;
 
       &:hover {
@@ -207,12 +215,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
   color: #fff;
 
   &__content-box {
     display: flex;
-    // justify-content: center;
+    justify-content: stretch;
     align-items: center;
     flex-direction: column;
   }
@@ -230,23 +239,26 @@
   }
   &__form {
     display: flex;
-    // justify-self: stretch;
-    // align-self: center;
-    // justify-content: center;
-    // flex: 1 0 70%;
+    justify-content: stretch;
+    align-items: start;
     min-width: 70%;
-    flex: 1;
+    // flex: 1 0 70%;
     input {
-      padding: 1.2rem 1rem;
+      padding: 1.37rem 1rem;
       flex: 1 0 70%;
-      width: 70%;
-      border-radius: 0.8rem;
+      // width: 70%;
+      border-radius: 0.3rem;
       border: none;
       margin-right: 2rem;
       font-family: inherit;
     }
     button {
-      font-weight: 500;
+      // font-weight: 500;
+      padding: 1.2rem 1rem;
+      min-width: 35%;
+      border-radius: 0.3rem;
+      display: block;
+      flex: 1;
     }
   }
 }
